@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <pre id="output">
+
+  </pre>
+  <script>
+    function parseProfile(p) {
+      document.getElementById("output").innerHTML = JSON.stringify(p);
+    }
+
+    (function () {
+        var wsc = document.createElement('script');
+        wsc.type = 'text/javascript';
+        wsc.src = '//aimfar.solution.weborama.fr/fcgi-bin/dispatch.fcgi?d.A=prd&d.format=jsonp&d.key=97aVy3Bq7VQv&d.callback=parseProfile';
+      var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wsc, s);
+    })();
+  </script>
+</body>
+</html>
