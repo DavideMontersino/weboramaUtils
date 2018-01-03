@@ -14,7 +14,7 @@
   </pre>
   <script>
     function parseProfile(p) {
-      document.getElementById("output").innerHTML = JSON.stringify(p);
+      document.getElementById("output").innerHTML = JSON.stringify(p, null, '\t');
     }
 
     (function () {
